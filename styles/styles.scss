@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Reenie Beanie', cursive;
+}
+.homepage {
+    margin-bottom: -10px;
+    img {
+        width: 100vw;
+    }
+    .first {
+        &:hover {
+
+            &:before {
+                content: '';
+                background: url('../assets/toonpark-hover.png');
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 999;
+    
+            }
+        }
+    }
+}
+
+.pg2 {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/toonland-background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    img {
+        width: 100%;
+    }
+    .items {
+        display: grid;
+        place-items: center;
+        position: relative;
+        background: url('../assets/bg-card.png');
+        background-size: contain;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        img {
+            // background: url('../assets/card-body.png');
+            background-size: contain;
+            width: 60%;
+            padding: 0 1.5rem;
+            cursor: pointer;
+            transition: 0.1s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        .topy {
+            width: 72%;
+            background: none;
+        }.botty {
+            width: 72%;
+            background: none;
+        }
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: url('../assets/card-top.png');
+        //     background-size: contain;
+        // }
+    }
+    .board {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        text-align: center;
+        p {
+            color: white;
+            // font-size: 2.5rem;
+            white-space: pre-line;
+            line-height: 1.2;
+        }
+    }
+    #button {
+        width: 30%;
+        margin: 1rem ;
+        cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
+    }
+
+footer {
+    grid-column: 1 / 4;
+    color: aliceblue;
+    display: grid;
+    padding: 1rem 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    padding-bottom: 0rem;
+
+    div {
+        padding: 1rem;
+    }
+    p, a {
+        font-size: 1.5rem;  
+        color: aliceblue;
+        // text-decoration: none;
+    }
+    .linkss {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    .boyui {
+        border-top: 0.5px solid aliceblue;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        .social {
+            padding: 0;
+        }
+        svg {
+            width: 1rem;
+            stroke: aliceblue;
+            fill: aliceblue;
+            margin: 1rem;
+            &:hover {
+                fill: white;
+                stroke: white;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+}
+}
+
+
+// .tooltip  {
+//     position: relative;
+// }
+
+
+//   .tooltip .tooltiptext {
+//     visibility: hidden;
+//     position: absolute;
+//     width: 20rem;
+//   }
+  
+//   .tooltip:hover .tooltiptext {
+//     visibility: visible;
+//   }
+
+.tooltipdiv {
+    position: relative;
+    .tooltipimage {
+        opacity: 0;
+        position: fixed;
+        display:block;
+        width: 20rem;
+        top: 0%;
+        left: 0%;
+        // transition: 0.3s ease-in;
+    }
+
+    &:hover {
+        .tooltipimage {
+            opacity: 1;
+        }
+    }
+
+}

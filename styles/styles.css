@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.homepage {
+  margin-bottom: -10px;
+}
+
+.homepage img {
+  width: 100vw;
+}
+
+.homepage .first:hover:before {
+  content: '';
+  background: url("../assets/toonpark-hover.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.pg2 {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/toonland-background.gif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/toonland-background.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pg2 img {
+  width: 100%;
+}
+
+.pg2 .items {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: url("../assets/bg-card.png");
+  background-size: contain;
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pg2 .items img {
+  background-size: contain;
+  width: 60%;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.pg2 .items img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.pg2 .items .topy {
+  width: 72%;
+  background: none;
+}
+
+.pg2 .items .botty {
+  width: 72%;
+  background: none;
+}
+
+.pg2 .board {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.pg2 .board p {
+  color: white;
+  white-space: pre-line;
+  line-height: 1.2;
+}
+
+.pg2 #button {
+  width: 30%;
+  margin: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.pg2 #button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.pg2 footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem 4rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+.pg2 footer div {
+  padding: 1rem;
+}
+
+.pg2 footer p, .pg2 footer a {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+.pg2 footer .linkss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.pg2 footer .boyui {
+  border-top: 0.5px solid aliceblue;
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.pg2 footer .boyui .social {
+  padding: 0;
+}
+
+.pg2 footer .boyui svg {
+  width: 1rem;
+  stroke: aliceblue;
+  fill: aliceblue;
+  margin: 1rem;
+}
+
+.pg2 footer .boyui svg:hover {
+  fill: white;
+  stroke: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.tooltipdiv {
+  position: relative;
+}
+
+.tooltipdiv .tooltipimage {
+  opacity: 0;
+  position: fixed;
+  display: block;
+  width: 20rem;
+  top: 0%;
+  left: 0%;
+}
+
+.tooltipdiv:hover .tooltipimage {
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
